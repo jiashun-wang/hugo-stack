@@ -1,9 +1,8 @@
 {
   "name": "hugo-theme-stack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
+    "prebuild": "which hugo || (echo 'Installing Hugo...' && curl -L https://github.com/gohugoio/hugo/releases/download/v0.107.0/hugo_extended_0.107.0_linux-amd64.tar.gz | tar -xz -C /tmp && chmod +x /tmp/hugo && mv /tmp/hugo /usr/local/bin/)",
     "build": "hugo --minify",
     "dev": "hugo server",
     "test": "echo \"Error: no test specified\" && exit 1",
