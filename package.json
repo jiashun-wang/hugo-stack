@@ -3,7 +3,7 @@
   "version": "1.0.0",
 
   "scripts": {
-    "prebuild": "curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.125.7/hugo_extended_0.125.7_Linux-64bit.tar.gz | tar -xz && mv hugo /tmp/hugo",
+    "prebuild": "curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.125.7/hugo_extended_0.157.0_Linux-64bit.tar.gz | tar -xz && mv hugo /tmp/hugo",
     "build": "/tmp/hugo --ignoreVendorPaths=\"*\" --minify"
   }
 }
