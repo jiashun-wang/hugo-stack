@@ -1,3 +1,5 @@
-This is an example site used for solely for testing purposes. **It is not meant to be used as a template for your site**. 
+Blog
 
-To create a new site, please use the starter template: [CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter/)
+## Reference
+
+[CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers](https://github.com/CaiJimmy/hugo-theme-stack)
