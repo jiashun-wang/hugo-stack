@@ -1,5 +1,6 @@
 ---
 title: "链接"
+slug: "links"
 links:
   - title: GitHub
     description: GitHub 是世界上最大的软件开发平台。
@@ -16,7 +17,6 @@ menu:
             icon: link
 comments: false
 ---
-
 要使用此功能，请在 frontmatter 中添加 `links` 部分。
 
 此页面的 frontmatter：

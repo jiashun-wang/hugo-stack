@@ -1,5 +1,6 @@
 ---
 title: 关于
+slug: "about"
 description: 关于本站及其作者的一切。
 date: 2026-01-26
 lastmod: 2026-01-26
@@ -9,7 +10,6 @@ menu:
         params:
             icon: user
 ---
-
 ## 这是给谁看的？
 
 这是一个示例**关于**页面。你可以用它来介绍你自己、你的博客或你的项目。
@@ -38,8 +38,9 @@ menu:
 
 ---
 
-> "Logic will get you from A to B. Imagination will take you everywhere."  
+> "Logic will get you from A to B. Imagination will take you everywhere."
 > — *Albert Einstein*
 
 ---
+
 *此页面由 AI 生成。*
