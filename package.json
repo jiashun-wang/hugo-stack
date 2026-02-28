@@ -2,9 +2,8 @@
   "name": "hugo-stack-site",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "if [ ! -f hugo ]; then echo 'Installing Hugo v0.157.0...'; curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_linux-amd64.tar.gz -o hugo.tar.gz && tar -xzf hugo.tar.gz && rm hugo.tar.gz; fi",
-    "build": "./hugo --minify",
-    "clean": "rm -rf public resources hugo",
-    "dev": "./hugo server -D"
+    "prebuild": "if [ ! -f hugo ]; then echo 'Installing Hugo v0.157.0...'; curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_linux-amd64.tar.gz -o hugo.tar.gz && tar -xzf hugo.tar.gz && rm hugo.tar.gz; fi && if ! command -v go > /dev/null; then echo 'Installing Go...'; curl -sSL https://go.dev/dl/go1.21.0.linux-amd64.tar.gz | tar -C /usr/local -xz; export PATH=$PATH:/usr/local/go/bin; fi",
+    "build": "./hugo mod get && ./hugo --minify",
+    "clean": "rm -rf public resources hugo"
   }
 }
