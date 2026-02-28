@@ -5,7 +5,7 @@
 
 
 # config/_default/module.toml
-# theme = "hugo-theme-stack"
+theme = "hugo-theme-stack"
 
 # [module]
 #   [[module.mounts]]
