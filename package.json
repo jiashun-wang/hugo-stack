@@ -1,17 +1,30 @@
 {
   "name": "hugo-theme-stack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Stack theme for Hugo with latest version support",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "mkdir -p layouts/shortcodes && cp -r themes/hugo-theme-stack/layouts/_shortcodes/* layouts/shortcodes/ 2>/dev/null || true",
+    "build": "hugo --minify",
+    "build:cloud": "curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_Linux-64bit.tar.gz | tar -xz && mv hugo /tmp/hugo && /tmp/hugo --minify",
+    "build:local": "hugo server --ignoreCache",
+    "hugo:version": "hugo version"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "hugo",
+    "theme",
+    "stack"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "packageManager": "pnpm@10.29.3",
   "devDependencies": {
     "prettier": "^3.8.1",
     "prettier-plugin-go-template": "^0.0.15"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "hugo": ">=0.157.0"
   }
 }
