@@ -16,3 +16,12 @@ disqusShortname = "hugo-theme-stack"
 
 [pagination]
     pagerSize = 5
+
+
+# config/_default/config.toml
+theme = "hugo-theme-stack"
+
+[module]
+  [[module.mounts]]
+    source = "themes/hugo-theme-stack/layouts/_shortcodes"
+    target = "layouts/shortcodes"
