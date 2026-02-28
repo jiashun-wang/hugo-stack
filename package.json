@@ -2,16 +2,14 @@
   "name": "hugo-theme-stack",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "if ! command -v hugo &> /dev/null; then echo 'Installing Hugo...'; wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.107.0/hugo_extended_0.107.0_linux-amd64.tar.gz; tar -xzf hugo.tar.gz hugo; chmod +x hugo; rm hugo.tar.gz; fi",
+    "prebuild": "if [ ! -f hugo ]; then echo 'Installing Hugo...'; curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.107.0/hugo_extended_0.107.0_linux-amd64.tar.gz; tar -xzf hugo.tar.gz hugo; chmod +x hugo; rm hugo.tar.gz; fi",
     "build": "./hugo --minify",
     "dev": "./hugo server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.29.3",
   "devDependencies": {
     "prettier": "^3.8.1",
     "prettier-plugin-go-template": "^0.0.15"
