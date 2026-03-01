@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl      = "https://wjs-hugo-stack.pages.dev/"
+baseurl      = "https://wjs-hugo-stack.pages.dev"# no / at the end
 languageCode = "en-us"
 title        = "Jiashun Wang's Blog"
 

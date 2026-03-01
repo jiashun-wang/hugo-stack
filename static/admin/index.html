@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Sveltia CMS</title>
+    <!-- 加载 Sveltia CMS 样式（可选） -->
+    <link rel="stylesheet" href="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.css" />
 </head>
 
 <body>
+    <!-- CMS 挂载点 -->
+    <div id="sveltia-cms"></div>
+
+    <!-- 加载 Sveltia CMS 脚本 -->
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+
+    <!-- 初始化 CMS -->
+    <script>
+        SveltiaCMS.init({
+            config: {
+                // 指定 config.yml 路径（必须与 index.html 同级）
+                backend: {
+                    name: 'git-gateway',
+                    repo: 'jiashun-wang/hugo-stack',  // 替换为实际仓库
+                    branch: 'main'
+                },
+                media_folder: 'static/images',
+                public_folder: '/images',
+                collections: [
+                    // 你的内容集合配置（需与 config.yml 一致）
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>
