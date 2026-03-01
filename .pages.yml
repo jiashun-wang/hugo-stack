@@ -18,7 +18,7 @@ content:
     type: collection
     path: content/post
     view:
-      fields: [pinned, draft, slug, title, author, category, tags, published, date ]
+      fields: [pinned, draft, slug, title, author, category, tags, language, published, date ]
 
     fields:
     - { name: title, label: Title, type: string, required: true }
@@ -36,4 +36,5 @@ content:
     - { name: encrypted, label: Encrypted, type: boolean }
     - { name: password, label: Password, type: text }
     - { name: toc, label: toc, type: boolean}
+    - { name: language, label: language, type: string}
     - { name: body, label: Body, type: rich-text}
