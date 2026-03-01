@@ -4,14 +4,16 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "hugo server -D --disableFastRender",
-    "build": "hugo --minify --gc",
+    "build": "curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.126.1/hugo_extended_0.126.1_Linux-64bit.tar.gz | tar -xz && ./hugo --minify --gc",
     "preview": "hugo server --buildDrafts=false --buildFuture=false"
   },
   "dependencies": {
-    "hugo": "0.157.1" // 最新稳定版 (https://github.com/gohugoio/hugo/releases)
+    // 移除 "hugo" 的 npm 依赖（避免预编译二进制文件）
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
   },
   "buildSettings": {
-    "command": "hugo --minify --gc",
+    "command": "npm run build", // 使用脚本内联下载兼容版 Hugo
     "outputDir": "public",
     "env": {
       "HUGO_ENV": "production",
