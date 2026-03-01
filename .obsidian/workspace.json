@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "067ae7d7712937ec",
+        "id": "2bd37433a66c89ce",
         "type": "tabs",
         "children": [
           {
-            "id": "a690f12803b88c77",
+            "id": "61d03fde7da93e8f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Gallery",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,6 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/Markdown Syntax/index.en.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "index.en 的反向链接列表"
             }
           },
           {
@@ -108,11 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/post/Markdown Syntax/index.en.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "index.en 的出链列表"
             }
           },
           {
@@ -150,20 +153,21 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "content/post/Markdown Syntax/index.en.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "index.en 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 241.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,25 +181,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a690f12803b88c77",
+  "active": "10605b6d56a83456",
   "lastOpenFiles": [
-    "public/images",
-    "static/images",
+    "content/post/Markdown Syntax/index.zh.md",
+    "content/post/Markdown Syntax/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg",
+    "content/post/Markdown Syntax/index.en.md",
+    "content/_index.zh.md",
+    "public/admin/index-backup.html",
+    "static/admin/index-backup.html",
     "public/ts/main.fa630feccc1fd73c7b61c9789fa1a8907c78dd90fadd8d8f83af918cda9ff068.js",
-    "public/ja/tags/photoswipe/page/1/index.html",
     "public/ja/tags/隐私/page/1/index.html",
-    "public/ja/tags/gallery/page/1/index.html",
     "public/ja/categories/documentation/page/1/index.html",
-    "public/ja/tags/photoswipe/page/1",
+    "public/ja/tags/gallery/page/1/index.html",
+    "public/ja/tags/photoswipe/page/1/index.html",
     "public/ja/tags/隐私/page/1",
-    "public/ja/tags/gallery/page/1",
-    "public/ja/tags/page/1/index.html",
+    "public/ja/page/page/1/index.html",
+    "public/ja/tags/photoswipe/page/1",
+    "public/links/ts-logo-128.jpg",
+    "public/p/markdown-语法指南/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg",
     "public/p/image-gallery/luca-bravo-alS7ewQ41M8-unsplash.jpg",
     "public/p/image-gallery/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg",
     "public/p/image-gallery/helena-hertz-wWZzXlDpMog-unsplash.jpg",
     "public/p/image-gallery/florian-klauer-nptLmg6jqDo-unsplash.jpg",
-    "public/p/markdown-语法指南/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg",
-    "public/links/ts-logo-128.jpg",
     "public/img/avatar.png",
     "public/categories/documentation/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg",
     "content/admin/_index.md",

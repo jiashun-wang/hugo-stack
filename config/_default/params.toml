@@ -198,4 +198,5 @@ SortBy             = "default"
         noFonts               = false
         theme                 = ""
 
+# 正确配置（无 cms 参数或明确指定 sveltia）
 
