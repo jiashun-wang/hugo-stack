@@ -2,7 +2,7 @@
   "name": "hugo-stack-site",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "mkdir -p ./bin && curl -L -o ./bin/hugo.tar.gz https://ghproxy.com/https://github.com/gohugoio/hugo/releases/download/v0.125.7/hugo_extended_0.125.7_Linux-64bit_static.tar.gz && tar -xzf ./bin/hugo.tar.gz -C ./bin && chmod +x ./bin/hugo",
+    "prebuild": "mkdir -p ./bin && curl -L -o ./bin/hugo.tar.gz https://https://github.com/gohugoio/hugo/releases/download/v0.125.7/hugo_extended_0.125.7_Linux-64bit_static.tar.gz && tar -xzf ./bin/hugo.tar.gz -C ./bin && chmod +x ./bin/hugo",
     "build": "./bin/hugo --ignoreVendorPaths=\"*\" --minify",
     "dev": "hugo server --ignoreCache --watch",
     "hugo:version": "./bin/hugo version",
