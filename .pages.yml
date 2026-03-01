@@ -2,8 +2,8 @@ media:
   input: static/images
   output: /
 content:
-  - name: posts
-    label: Posts
+  - name: post
+    label: Post
     type: collection
     path: content/blog
     view:
