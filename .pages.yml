@@ -35,4 +35,5 @@ content:
     - { name: coverIncontent, label: Cover in Content, type: boolean }
     - { name: encrypted, label: Encrypted, type: boolean }
     - { name: password, label: Password, type: text }
+    - { name: toc, label: toc, type: boolean}
     - { name: body, label: Body, type: rich-text}
