@@ -201,7 +201,7 @@ SortBy             = "default"
 
 [headless_cms]
   engine = "sveltia"
-  site_url = "http://localhost:1313"
+  site_url = "https://wjs-hugo-stack.pages.dev"
 
   [headless_cms.backend]
     name = "github"
@@ -228,8 +228,7 @@ SortBy             = "default"
     notAlternative = true
     mediaType = "application/yaml"
 
-[params]
-  [params.headless_cms]
+[params.headless_cms]
     publish_mode = "editorial_workflow"
     media_folder = "static/uploads"
     public_folder = "/uploads"
