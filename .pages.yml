@@ -21,20 +21,33 @@ content:
       fields: [pinned, draft, slug, title, author, category, tags, language, published, date ]
 
     fields:
-    - { name: title, label: Title, type: string, required: true }
-    - { name: slug, label: Slug, type: string, required: true}
-    - { name: description, label: Description, type: string }
-    - { name: author, label: Author, type: string , required: true}
-    - { name: pinned, label: Pinned, type: boolean }
-    - { name: published, label: Published, type: date }
-    - { name: date, label: Date, type: date , required: true}
-    - { name: tags, label: Tags, type: string, list: true }
-    - { name: category, label: Category, type: text }
-    - { name: draft, label: Draft, type: boolean }
-    - { name: cover, label: Cover Image, type: string }
-    - { name: coverIncontent, label: Cover in Content, type: boolean }
-    - { name: encrypted, label: Encrypted, type: boolean }
-    - { name: password, label: Password, type: text }
-    - { name: toc, label: toc, type: boolean}
-    - { name: language, label: language, type: string}
-    - { name: body, label: Body, type: rich-text}
+      # ===== 基础内容 =====
+      - { name: title, label: Title, type: string, required: true }
+      - { name: body, label: Body, type: rich-text }
+    
+      # ===== 作者与时间 =====
+      - { name: author, label: Author, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: published, label: Published, type: date }
+    
+      # ===== 内容与分类 =====
+      - { name: slug, label: Slug, type: string, required: true }
+      - { name: description, label: Description, type: string }
+      - { name: category, label: Category, type: text }
+      - { name: tags, label: Tags, type: string, list: true }
+    
+      # ===== 发布控制 =====
+      - { name: draft, label: Draft, type: boolean }
+      - { name: pinned, label: Pinned, type: boolean }
+    
+      # ===== 多语言与SEO =====
+      - { name: language, label: Language, type: string }  # 建议默认值: "en"
+      - { name: toc, label: Show TOC, type: boolean }     # 更清晰的标签
+    
+      # ===== 媒体与交互 =====
+      - { name: cover, label: Cover Image, type: string }
+      - { name: coverIncontent, label: Show Cover in Content, type: boolean }
+    
+      # ===== 高级功能 =====
+      - { name: encrypted, label: Enable Encryption, type: boolean }
+      - { name: password, label: Password, type: text }   # 仅在 encrypted=true 时显示
