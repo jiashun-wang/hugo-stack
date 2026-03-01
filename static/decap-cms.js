@@ -1,0 +1,1 @@
+Redirecting to /decap-cms@3.10.1/dist/decap-cms.js
