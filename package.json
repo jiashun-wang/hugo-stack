@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "prebuild": "curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_Linux-64bit.tar.gz | tar -xz && mv hugo /tmp/hugo",
-    "build": "hugo --ignoreVendorPaths=\"*\" --minify",
-    "dev": "hugo server --ignoreCache --watch",
-    "hugo:version": "hugo version",
+    "build": "/tmp/hugo --ignoreVendorPaths=\"*\" --minify",    "dev": "hugo server --ignoreCache --watch",
+    "hugo:version": "/tmp/hugo version",
     "postbuild": "echo \"✅ Build completed! Check ./public directory\""
-  },
-  "devDependencies": {
-    "hugo-bin": "^0.116.2"
   },
   "engines": {
     "hugo": ">=0.157.0"
