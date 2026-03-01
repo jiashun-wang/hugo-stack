@@ -18,7 +18,7 @@ content:
     type: collection
     path: content/post
     view:
-      fields: [pinned, draft, title, author, category, tags, published, date ]
+      fields: [pinned, draft, slug, title, author, category, tags, published, date ]
 
     fields:
     - { name: title, label: Title, type: string, required: true }
