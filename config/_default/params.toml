@@ -199,38 +199,3 @@ SortBy             = "default"
         theme                 = ""
 
 
-[headless_cms]
-  engine = "sveltia"
-  site_url = "https://wjs-hugo-stack.pages.dev"
-
-  [headless_cms.backend]
-    name = "github"
-    repo = "jiashun-wang/hugo-stack"
-
-  [[headless_cms.collections]]
-    name = "blog"
-    create = true
-
-    [[headless_cms.collections.fields]]
-      label = "Title"
-      name = "title"
-      widget = "string"
-
-    # 可继续添加更多字段...
-    # [[headless_cms.collections.fields]]
-    #   label = "Content"
-    #   name = "body"
-    #   widget = "markdown"
-
-# [outputFormats]
-#   [outputFormats.HeadlessCMSConfig]
-#     baseName = "headless-cms-config"
-#     isHTML = false
-#     notAlternative = true
-#     mediaType = "application/yaml"
-
-# [params.headless_cms]
-#     publish_mode = "editorial_workflow"
-#     media_folder = "static/uploads"
-#     public_folder = "/uploads"
-#     search = true

@@ -23,7 +23,7 @@ theme = "hugo-theme-stack"
 #     source = "themes/hugo-theme-stack/assets"
 #     target = "assets"
 
-[module]
-  [module.hugoVersion]
-    min = "0.119.0"
-    extended = false
+# [module]
+#   [module.hugoVersion]
+#     min = "0.119.0"
+#     extended = false
