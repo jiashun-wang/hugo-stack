@@ -24,15 +24,15 @@ content:
     - { name: title, label: Title, type: string, required: true }
     - { name: slug, label: Slug, type: string, required: true}
     - { name: description, label: Description, type: string }
-    - { name: author, label: Author, type: string }
+    - { name: author, label: Author, type: string , required: true}
     - { name: pinned, label: Pinned, type: boolean }
     - { name: published, label: Published, type: date }
-    - { name: date, label: Date, type: date }
+    - { name: date, label: Date, type: date , required: true}
     - { name: tags, label: Tags, type: string, list: true }
     - { name: category, label: Category, type: text }
     - { name: draft, label: Draft, type: boolean }
     - { name: cover, label: Cover Image, type: string }
     - { name: coverIncontent, label: Cover in Content, type: boolean }
     - { name: encrypted, label: Encrypted, type: boolean }
-    - { name: password, label: Password, type: text}
+    - { name: password, label: Password, type: text }
     - { name: body, label: Body, type: rich-text}
