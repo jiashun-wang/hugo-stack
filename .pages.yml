@@ -3,6 +3,7 @@ media:
   output: /
   
 content:
+
   - name: post
     label: Post
     type: collection
