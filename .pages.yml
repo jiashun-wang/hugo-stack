@@ -1,33 +1,37 @@
 media:
-  input: static/images
-  output: /
+  - name: images
+    label: Images
+    input: static/images
+    output: /images
+    categories: [image]
+
+  - name: media
+    label: media
+    input: static/media
+    output: /media
+    #categories: [image]
   
 content:
 
   - name: post
     label: Post
     type: collection
-    path: content/blog
+    path: content/post
     view:
-      fields: [ title, draft, date ]
+      fields: [pinned, draft, title, author, category, tags, published, date ]
+
     fields:
-      - { name: author, label: Author, type: string }
-      - { name: pubDatetime, label: Date, type: date }
-      - { name: modDatetime, label: Date, type: date }
-      - { name: title, label: Title, type: string, required: true }
-      - { name: ogImage, label: Title, type: string }
-      - { name: slug, label: Slug, type: string }
-      - { name: featured, label: Featured, type: boolean }
-      - { name: draft, label: Draft, type: boolean }
-      - { name: tags, label: Tags, type: string, list: true }
-      - { name: description, label: Description, type: string }
-      - { name: body, label: Body, type: rich-text }
-      
-  - name: about
-    label: About page
-    type: file
-    path: content/page/about/index.zh.md
-    fields:
-      - { name: layout, type: string, hidden: true, default: "../layouts/AboutLayout.astro" }
-      - { name: title, label: Title, type: string }
-      - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
+    - { name: title, label: Title, type: string, required: true }
+    - { name: description, label: Description, type: string }
+    - { name: author, label: Author, type: string }
+    - { name: pinned, label: Pinned, type: boolean }
+    - { name: published, label: Published, type: date }
+    - { name: date, label: Date, type: date }
+    - { name: tags, label: Tags, type: string, list: true }
+    - { name: category, label: Category, type: text }
+    - { name: draft, label: Draft, type: boolean }
+    - { name: cover, label: Cover Image, type: string }
+    - { name: coverIncontent, label: Cover in Content, type: boolean }
+    - { name: encrypted, label: Encrypted, type: boolean }
+    - { name: password, label: Password, type: text}
+    - { name: body, label: Body, type: rich-text}
