@@ -187,6 +187,7 @@
   },
   "active": "cca8382e48348cbf",
   "lastOpenFiles": [
+    "static/media/-1.gitkeep",
     "public/categories/syntax/index.xml",
     "public/tags/mermaid/index.xml",
     "public/tags/diagrams/index.xml",
@@ -197,7 +198,6 @@
     "public/p/mermaid-diagrams",
     "public/tags/shortcodes/page/1/index.html",
     "public/tags/shortcodes/page/1",
-    "public/tags/shortcodes/page",
     "content/post/Math Typesetting/index.en.md",
     "content/page/about/index.zh.md",
     "content/page/about/index.ja.md",
