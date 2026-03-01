@@ -1,5 +1,8 @@
 {
-  "installCommand": "HUGO_BIN_EXTENDED=true npm install --save-dev cross-env",
+  "installCommand": "npm install --save-dev cross-env",
   "buildCommand": "npm run build",
-  "outputDirectory": "./public"
+  "outputDirectory": "./public",
+  "cache": {
+    "paths": ["node_modules", "./bin"]
+  }
 }
