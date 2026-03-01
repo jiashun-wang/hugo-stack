@@ -1,6 +1,7 @@
 media:
   input: static/images
   output: /
+  
 content:
   - name: post
     label: Post
