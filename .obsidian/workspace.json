@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2bd37433a66c89ce",
+        "id": "e0b044b18ec8af84",
         "type": "tabs",
         "children": [
           {
-            "id": "61d03fde7da93e8f",
+            "id": "08f2308d65c81e49",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/post/shortcodes/index.en.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "index.en"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Gallery",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,12 +74,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 238.5
   },
   "right": {
     "id": "5304b30b84aff55a",
@@ -153,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/Markdown Syntax/index.en.md",
+                "file": "content/post/shortcodes/index.en.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -163,7 +166,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,11 +181,16 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "media-extended:Open external media": false
     }
   },
-  "active": "10605b6d56a83456",
+  "active": "08f2308d65c81e49",
   "lastOpenFiles": [
+    "content/post/Math Typesetting/index.en.md",
+    "content/page/about/index.zh.md",
+    "content/page/about/index.ja.md",
+    "content/page/about/index.en.md",
     "content/post/Markdown Syntax/index.zh.md",
     "content/post/Markdown Syntax/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg",
     "content/post/Markdown Syntax/index.en.md",
