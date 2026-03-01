@@ -1,8 +1,21 @@
 {
-  "installCommand": "npm install --save-dev cross-env",
-  "buildCommand": "npm run build",
-  "outputDirectory": "./public",
-  "cache": {
-    "paths": ["node_modules", "./bin"]
+  "name": "hugo-esa-template",
+  "type": "static-site",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "hugo server -D --disableFastRender",
+    "build": "hugo --minify --gc",
+    "preview": "hugo server --buildDrafts=false --buildFuture=false"
+  },
+  "dependencies": {
+    "hugo": "0.157.1" // 最新稳定版 (https://github.com/gohugoio/hugo/releases)
+  },
+  "buildSettings": {
+    "command": "hugo --minify --gc",
+    "outputDir": "public",
+    "env": {
+      "HUGO_ENV": "production",
+      "HUGO_ENABLEGITINFO": "true"
+    }
   }
 }
